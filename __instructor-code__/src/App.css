@@ -1,0 +1,90 @@
+.main-header {
+  height: 150px;
+  background-color: royalblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.header-logo {
+  height: 125px;
+}
+
+.header-links {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  font-size: 20px;
+}
+
+.dropdown-toggle {
+  display: none;
+}
+
+.mobile-links {
+  display: none;
+}
+
+.react-logo {
+  height: 350px;
+  width: 350px;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: 5s;
+}
+
+.react-logo:hover {
+  height: 700px;
+  width: 700px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+@media(max-width: 800px){
+  .main-header {
+    height: 200px;
+  }
+
+  .header-logo {
+    height: 175px;
+  }
+
+  .header-links {
+    width: 40%;
+  }
+}
+
+@media(max-width: 450px){
+  .header-links {
+    display: none;
+  }
+
+  .dropdown-toggle {
+    display: initial;
+  }
+
+  .mobile-links {
+    display: initial;
+    height: 150px;
+    width: 150px;
+    background-color: royalblue;
+    position: fixed;
+    top: 200px;
+    right: 0px;
+  }
+}
