@@ -13,7 +13,7 @@ const Contact = () => {
                 </div>
                 <div id='contact-boxes' >
                     <div id='left-boxes'>
-                        <input id='input' placeholder='Your Name*' />
+                        <input id='input' placeholder='Your Name*' type='text' />
                         <input id='input' placeholder='Your Email*' />
                         <input id='input' placeholder='Your Phone*' />
                     </div>
